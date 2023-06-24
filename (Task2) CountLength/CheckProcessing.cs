@@ -49,10 +49,8 @@ namespace ListArray
                             myDictionary[arrayText[i]]++;
                         }
                     }
-
-                    counter = 1;
                 }
-
+                counter = 1;
             }
             var sortedDict = myDictionary.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
             var result = new Dictionary<string, int>();
@@ -65,7 +63,6 @@ namespace ListArray
                     result.Add(i.Key, i.Value);
                     counter2++;
                 }
-
             }
             return result;
         }
